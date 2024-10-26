@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date and Time</title>
+    <script>
+        var fulldate = new Date();
+        var year1 = fulldate.getFullYear();
+        var month1 = fulldate.getMonth() + 1;
+        var date1 = fulldate.getDate();
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("day").innerText = date1 + "/" + month1 + "/" + year1;
+        });
+    </script>
+</head>
+<body>
+<h1>Date and Time</h1>
+<p>Today Is:</p>
+<p id="day"></p>
+</body>
+</html>
